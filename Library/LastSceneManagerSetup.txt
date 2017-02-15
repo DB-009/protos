@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/ActiveProjects/_Mobile_casualGames/IMA_FIRING.unity
+  isLoaded: 1
+  isActive: 1
