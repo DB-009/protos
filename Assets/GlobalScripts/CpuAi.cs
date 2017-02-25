@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 public class CpuAi : MonoBehaviour
 {
-
+    //thanks to type-21 in reddit-game dev learned about queue
 
     public GameObject target;
     public float minDistance;
@@ -56,6 +56,7 @@ public class CpuAi : MonoBehaviour
     public int chargeSpd;
     public Material normalMat, chargeMat;
 
+
     public enum gunType
     {
         normal,
@@ -78,6 +79,13 @@ public class CpuAi : MonoBehaviour
 
     public enum directionMoving { not, left, right, up, down };
     public directionMoving dir;
+
+
+    public bool trackAtks;
+    public int agression;
+    public Ene_AtkPatternTracker atkTracker;
+
+    public float nearDis, farDis;
 
     public void Awake()
     {
@@ -158,6 +166,7 @@ public class CpuAi : MonoBehaviour
             }
         }
 
+
     }
 
     public void OnCollisionStay(Collision col)
@@ -179,6 +188,15 @@ public class CpuAi : MonoBehaviour
         {
             playerCol = true;
         }
+        else if (col.collider.tag == "Combo")
+        {
+            float disChk =  GetDistance();
+            if(disChk <= nearDis)
+            {
+                atkTracker.nearAtklanded(playerAttack.attackType.melee);
+            }
+
+        }
     }
 
 
@@ -187,13 +205,15 @@ public class CpuAi : MonoBehaviour
         if (col.gameObject.tag == "ground")
         {
              isGrounded = false;
-            //dblJumped = false;
         }
 
         else if (col.collider.tag == "wall" && isGrounded == false)//if the object you collided withs tag is ground your player is on the floor
         {
+
             rb.isKinematic = false;
+
             onWall = false;
+
             dblJumped = false;
 
 
@@ -363,18 +383,31 @@ public class CpuAi : MonoBehaviour
     }
 
 
+    public float GetDistance()
+    {
+        float offset = target.transform.position.x - transform.position.x;
+        float sqrLen = Mathf.Abs(offset);
 
+
+        return sqrLen;
+
+
+    }
 
 
     //Check if players close
     public void CheckDistance()
     {
-        Vector3 offset = target.transform.position - transform.position;
-        float sqrLen = offset.sqrMagnitude;
+        float xOffset = target.transform.position.x - transform.position.x;
+        float yOffset = target.transform.position.y - transform.position.y;
+        float zOffset = target.transform.position.z - transform.position.z;
+
+        float sqrLenX = Mathf.Abs(xOffset);
+        float sqrLenY = Mathf.Abs(yOffset);
+        float sqrLenZ = Mathf.Abs(zOffset);
 
 
-
-        if (sqrLen < minDistance )
+        if (sqrLenX < minDistance || sqrLenY < minDistance || sqrLenZ < minDistance)
         {
 
 
@@ -423,7 +456,7 @@ public class CpuAi : MonoBehaviour
 
             float yDis = target.transform.position.y;
             //Ycheck for jumping
-            if (yDis > transform.position.y+1 && sqrLen < minDistance/3 )
+            if (yDis > transform.position.y+1 && yOffset < minDistance )
             {
                 if(isGrounded == true)
                 Jump();

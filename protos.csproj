@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4F2A51AA-C2BA-99A5-66CF-2799609149B3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>Android:13</UnityBuildTarget>
+    <UnityVersion>5.5.1f1</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_1;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VIDEO;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;DEVELOPMENT_BUILD;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_VSTU</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_1;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VIDEO;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;DEVELOPMENT_BUILD;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_VSTU</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PlaymodeTestsRunner">
+      <HintPath>Library\UnityAssemblies\UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VR">
+      <HintPath>Library\UnityAssemblies\UnityEngine.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\GlobalScripts\CameraTracking.cs" />
+    <Compile Include="Assets\GlobalScripts\CpuAi.cs" />
+    <Compile Include="Assets\GlobalScripts\Enemy.cs" />
+    <Compile Include="Assets\GlobalScripts\Mwin_Follow.cs" />
+    <Compile Include="Assets\GlobalScripts\Player.cs" />
+    <Compile Include="Assets\GlobalScripts\_StateMachines\controlledGameStateManager.cs" />
+    <Compile Include="Assets\GlobalScripts\_StateMachines\controlledMatchPhaser.cs" />
+    <Compile Include="Assets\GlobalScripts\_StateMachines\controlledUIManager.cs" />
+    <Compile Include="Assets\GlobalScripts\classes\Weapon.cs" />
+    <Compile Include="Assets\GlobalScripts\classes\buff.cs" />
+    <Compile Include="Assets\GlobalScripts\classes\buffEffects.cs" />
+    <Compile Include="Assets\GlobalScripts\classes\myButton.cs" />
+    <Compile Include="Assets\GlobalScripts\classes\projectileLife.cs" />
+    <Compile Include="Assets\GlobalScripts\classes\taps.cs" />
+    <Compile Include="Assets\GlobalScripts\classes\textLife.cs" />
+    <Compile Include="Assets\GlobalScripts\controllers\HoverMotor.cs" />
+    <Compile Include="Assets\GlobalScripts\controllers\Networking\LaneShift_TopDown_NET.cs" />
+    <Compile Include="Assets\GlobalScripts\controllers\Networking\objGen_Net.cs" />
+    <Compile Include="Assets\GlobalScripts\controllers\Networking\projectileLife_NETWORK.cs" />
+    <Compile Include="Assets\GlobalScripts\controllers\PlatformControls.cs" />
+    <Compile Include="Assets\GlobalScripts\controllers\TopDownController.cs" />
+    <Compile Include="Assets\GlobalScripts\controllers\controllers\CollisionHandler.cs" />
+    <Compile Include="Assets\GlobalScripts\controllers\controllers\GunControl.cs" />
+    <Compile Include="Assets\GlobalScripts\controllers\controllers\Input_Controller.cs" />
+    <Compile Include="Assets\GlobalScripts\controllers\controllers\LaneShift_TopDown.cs" />
+    <Compile Include="Assets\GlobalScripts\controllers\controllers\_touch.cs" />
+    <Compile Include="Assets\GlobalScripts\controllers\touch_tapHeroUpdate.cs" />
+    <Compile Include="Assets\GlobalScripts\myFunctions.cs" />
+    <Compile Include="Assets\GlobalScripts\obstacleEffects.cs" />
+    <Compile Include="Assets\Projects\_Tier1\CardGame\Domino\myGameStateManager.cs" />
+    <Compile Include="Assets\Projects\_Tier1\CardGame\Domino\myPlayer.cs" />
+    <Compile Include="Assets\Projects\_Tier1\CardGame\Domino\myTurnBasedSystem.cs" />
+    <Compile Include="Assets\Projects\_Tier1\CardGame\Domino\numberToken.cs" />
+    <Compile Include="Assets\Projects\_Tier1\FixedFlight\FFGameState.cs" />
+    <Compile Include="Assets\Projects\_Tier1\FixedFlight\FFGenerator.cs" />
+    <Compile Include="Assets\Projects\_Tier1\FixedFlight\buffZone.cs" />
+    <Compile Include="Assets\Projects\_Tier1\IntergallacticBattleShips\BattleShipsMapObj.cs" />
+    <Compile Include="Assets\Projects\_Tier1\IntergallacticBattleShips\BattleShipsMatchManager.cs" />
+    <Compile Include="Assets\Projects\_Tier1\IntergallacticBattleShips\BattleShipsMatchObj.cs" />
+    <Compile Include="Assets\Projects\_Tier1\_Platformer_CPU_SYS\EdgeData.cs" />
+    <Compile Include="Assets\Projects\_Tier1\_Platformer_CPU_SYS\Ene.cs" />
+    <Compile Include="Assets\Projects\_Tier1\_Platformer_CPU_SYS\vonDoom.cs" />
+    <Compile Include="Assets\Projects\_Tier1\_Platformer_Survival_proto\CasualGameManager.cs" />
+    <Compile Include="Assets\Projects\_Tier1\_Platformer_Survival_proto\Casual_StageController.cs" />
+    <Compile Include="Assets\Projects\_Tier1\_Platformer_Survival_proto\QuadrantController.cs" />
+    <Compile Include="Assets\Projects\_Tier1\_Platformer_Survival_proto\casualButton.cs" />
+    <Compile Include="Assets\Projects\_Tier1\_Platformer_Survival_proto\onClicker_Deleto.cs" />
+    <Compile Include="Assets\Projects\_Tier1\_TurnBased\BSys_1.cs" />
+    <Compile Include="Assets\Projects\_Tier1\_TurnBased\TurnBasedBattleObject.cs" />
+    <Compile Include="Assets\Projects\_Tier1\_TurnBased\TurnBasedBattlerClass.cs" />
+    <Compile Include="Assets\Projects\_Tier1\_TurnBased\TurnBasedEquip.cs" />
+    <Compile Include="Assets\Projects\_Tier1\_TurnBased\TurnBasedPlayer.cs" />
+    <Compile Include="Assets\Projects\_Tier1\_TurnBased\TurnBasedUIManager.cs" />
+    <Compile Include="Assets\Projects\_Tier1\_TurnBased\TurnBasedWeapon.cs" />
+    <Compile Include="Assets\Projects\_Tier1\pacman\pacmanGame.cs" />
+    <Compile Include="Assets\Projects\_Tier2\OneTap_CASUALCLICK\OneTap_StateManager.cs" />
+    <Compile Include="Assets\Projects\_Tier2\OneTap_CASUALCLICK\interactableObject.cs" />
+    <Compile Include="Assets\Projects\_Tier2\TileCardGame\TileBattleSystem.cs" />
+    <Compile Include="Assets\Projects\_Tier2\TileCardGame\TileCard_BS.cs" />
+    <Compile Include="Assets\Projects\_Tier2\TileCardGame\cardBattler.cs" />
+    <Compile Include="Assets\Projects\_Tier2\TileCardGame\tileBattler.cs" />
+    <Compile Include="Assets\Projects\_Tier2\TileCardGame\tilePiece.cs" />
+    <Compile Include="Assets\Projects\_Tier2\TileCardGame\tileSpawner.cs" />
+    <Compile Include="Assets\Projects\_Tier2\_racingPlatformer(3laner)\RaceMatchManager.cs" />
+    <Compile Include="Assets\Projects\_Tier2\_racingPlatformer(3laner)\RacerObj.cs" />
+    <Compile Include="Assets\Projects\_Tier2\_racingPlatformer(3laner)\StateManagerRacing.cs" />
+    <Compile Include="Assets\Projects\_Tier2\_racingPlatformer(3laner)\cpuRacer.cs" />
+    <Compile Include="Assets\Projects\_Tier2\_racingPlatformer(3laner)\default\RacingController.cs" />
+    <Compile Include="Assets\Projects\_Tier2\_racingPlatformer(3laner)\endless3laner\_Endless2dController.cs" />
+    <Compile Include="Assets\Projects\_Tier2\breakout\Ball.cs" />
+    <Compile Include="Assets\Projects\_Tier2\breakout\Bricks.cs" />
+    <Compile Include="Assets\Projects\_Tier2\breakout\DeadZone.cs" />
+    <Compile Include="Assets\Projects\_Tier2\breakout\GM.cs" />
+    <Compile Include="Assets\Projects\_Tier2\breakout\Paddle.cs" />
+    <Compile Include="Assets\Projects\_Tier2\breakout\TimedDestroy.cs" />
+    <Compile Include="Assets\Projects\_Tier2\puzzleGame\puzzleMatch.cs" />
+    <Compile Include="Assets\Projects\_Tier2\puzzleGame\puzzlePiece.cs" />
+    <Compile Include="Assets\Projects\_Tier2\puzzleGame\puzzlePlayer.cs" />
+    <Compile Include="Assets\Projects\_Tier2\puzzleGame\puzzleSpawner.cs" />
+    <Compile Include="Assets\Projects\_Tier3\Collinate\CollinateEvents.cs" />
+    <Compile Include="Assets\Projects\_Tier3\Collinate\CollinateGameStateManager.cs" />
+    <Compile Include="Assets\Projects\_Tier3\Collinate\CollinateUIManager.cs" />
+    <Compile Include="Assets\Projects\_Tier3\Collinate\Planet.cs" />
+    <Compile Include="Assets\Projects\_Tier3\Collinate\playerControls.cs" />
+    <Compile Include="Assets\Projects\_Tier3\GETP_Trump Game\GETP_Controller.cs" />
+    <Compile Include="Assets\Projects\_Tier3\GETP_Trump Game\GETP_ENEMY.cs" />
+    <Compile Include="Assets\Projects\_Tier3\GETP_Trump Game\GETP_GameManager.cs" />
+    <Compile Include="Assets\Projects\_Tier3\GETP_Trump Game\GETP_buff.cs" />
+    <Compile Include="Assets\Projects\_Tier3\GETP_Trump Game\GETP_button.cs" />
+    <Compile Include="Assets\Projects\_Tier3\Ijome\I_PE_Mwin_Follow.cs" />
+    <Compile Include="Assets\Projects\_Tier3\Raider Rush\RockToss_Controller.cs" />
+    <Compile Include="Assets\Projects\_Tier3\Raider Rush\RockToss_Controller_NET.cs" />
+    <Compile Include="Assets\Projects\_Tier3\Raider Rush\RockToss_GameManager.cs" />
+    <Compile Include="Assets\Projects\_Tier3\Raider Rush\RockToss_MatchManager.cs" />
+    <Compile Include="Assets\Projects\_Tier3\Raider Rush\RockToss_button.cs" />
+    <Compile Include="Assets\Projects\_Tier3\WarBase\WB_BattleSystemManager.cs" />
+    <Compile Include="Assets\Projects\_Tier3\WarBase\WB_CameraControls.cs" />
+    <Compile Include="Assets\Projects\_Tier3\WarBase\WB_Castle.cs" />
+    <Compile Include="Assets\Projects\_Tier3\WarBase\WB_GameStateManager.cs" />
+    <Compile Include="Assets\Projects\_Tier3\WarBase\WB_UIManager.cs" />
+    <Compile Include="Assets\Projects\_Tier3\milliofigre\_Atmosphere.cs" />
+    <Compile Include="Assets\Projects\_Tier3\milliofigre\mf_GameManager.cs" />
+    <Compile Include="Assets\Projects\_Tier3\milliofigre\mf_player.cs" />
+    <Compile Include="Assets\StageGens_MapMakers\2dStageGen\GameManager.cs" />
+    <Compile Include="Assets\StageGens_MapMakers\2dStageGen\SlingShotPlayer.cs" />
+    <Compile Include="Assets\StageGens_MapMakers\2dStageGen\StackStageGen.cs" />
+    <Compile Include="Assets\StageGens_MapMakers\2dStageGen\StageDesignClass.cs" />
+    <Compile Include="Assets\StageGens_MapMakers\2dStageGen\StageGenManager.cs" />
+    <Compile Include="Assets\StageGens_MapMakers\2dStageGen\deathObject.cs" />
+    <Compile Include="Assets\StageGens_MapMakers\2dStageGen\movement.cs" />
+    <Compile Include="Assets\StageGens_MapMakers\2dStageGen\movingPlats.cs" />
+    <Compile Include="Assets\StageGens_MapMakers\2dStageGen\objGen.cs" />
+    <Compile Include="Assets\StageGens_MapMakers\2dStageGen\runWayGen.cs" />
+    <Compile Include="Assets\StageGens_MapMakers\TileMap\InputSystem\playerShipController.cs" />
+    <Compile Include="Assets\StageGens_MapMakers\TileMap\_mapGen\controlledStageGenerator.cs" />
+    <Compile Include="Assets\StageGens_MapMakers\TileMap\_mapGen\itemBuff.cs" />
+    <Compile Include="Assets\StageGens_MapMakers\TileMap\_mapGen\mapItem.cs" />
+    <Compile Include="Assets\StageGens_MapMakers\TileMap\_mapGen\mapTile.cs" />
+    <Compile Include="Assets\StageGens_MapMakers\TileMap\functions\ActionKeys.cs" />
+    <Compile Include="Assets\StageGens_MapMakers\TileMap\functions\TriggerNet.cs" />
+    <Compile Include="Assets\StageGens_MapMakers\TileMap\scripts\CameraControls.cs" />
+    <Compile Include="Assets\StageGens_MapMakers\TileMap\scripts\inputFields.cs" />
+    <Compile Include="Assets\StageGens_MapMakers\TileMap\scripts\itemRelease.cs" />
+    <Compile Include="Assets\StageGens_MapMakers\TileMap\scripts\mapObjects\Tower.cs" />
+    <Compile Include="Assets\StageGens_MapMakers\TileMap\scripts\mapObjects\Troop.cs" />
+    <Compile Include="Assets\StageGens_MapMakers\TileMap\scripts\mapObjects\bombLife.cs" />
+    <Compile Include="Assets\StageGens_MapMakers\TileMap\scripts\mapObjects\explosion.cs" />
+    <Compile Include="Assets\StageGens_MapMakers\TileMap\scripts\playerMovementController.cs" />
+    <Compile Include="Assets\StageGens_MapMakers\TileMap\scripts\tacticalTile.cs" />
+    <Compile Include="Assets\_Frank\Ene_AtkPatternTracker.cs" />
+    <Compile Include="Assets\_Frank\playerAttack.cs" />
+    <Compile Include="Assets\_GodScript\GodVariable.cs" />
+    <Compile Include="Assets\_GodScript\reflectiveHelper.cs" />
+    <Compile Include="Assets\_PathGen\PathGen_Bug.cs" />
+    <Compile Include="Assets\_PathGen\pathPoint.cs" />
+    <Compile Include="Assets\_SKATEBOARD\HoverBoard.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+</Project>

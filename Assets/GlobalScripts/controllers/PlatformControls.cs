@@ -6,8 +6,6 @@ using System.Collections.Generic;
 public class PlatformControls : MonoBehaviour
 {
 
-
-
     //Boolean variables can be true or false you'd use this to see wheather something is happening or a variable is set.
 
     public int playerID;
@@ -204,12 +202,10 @@ public class PlatformControls : MonoBehaviour
                 Vector3 direction = (targetReposition - transform.position).normalized;
                 rb.MovePosition(transform.position + new Vector3 (direction.x,0,0) * (moveSpd * dashDistance) * Time.fixedDeltaTime);
 
-
                 float temp = (targetReposition - transform.position).magnitude;
                 if (temp <= .6f)
                 {
                     isDashing = false;
-
                 }
 
             }
@@ -352,8 +348,6 @@ public class PlatformControls : MonoBehaviour
                 {
                     walkTimer = Time.time + allowedWalkingTime;
 
-
-
                     //Debug.Log("motion timer started");
                 }
                 else if (Time.time >= walkTimer && walkTimer != 0)//if its been a second since you stopped moving
@@ -368,8 +362,6 @@ public class PlatformControls : MonoBehaviour
                                                       // Debug.Log("motion timer ended");
                 }
 
-
-                //Debug.Log("not in motion");
             }
 
 
@@ -813,7 +805,6 @@ public class PlatformControls : MonoBehaviour
     {
         if (Time.time <= dashTimer && dashTimer != 0 &&  Time.time >= lastDash + impulseTimer)//also add number of dashes can connect
         {
-            
              if (dir == 0)
             {
                 // rb.AddForce(new Vector3(-myPlayer.playerSpd - 4, 0,0), ForceMode.Acceleration);
@@ -834,6 +825,7 @@ public class PlatformControls : MonoBehaviour
 
                 UpdateStamina(staminaLoss * dashDistance , true);
             }
+
 
             sidSpd = 0;
             rb.velocity = Vector3.zero;

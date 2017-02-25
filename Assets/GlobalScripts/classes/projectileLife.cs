@@ -46,6 +46,21 @@ public class projectileLife : MonoBehaviour
 
                 CpuAi disEne = col.gameObject.GetComponent<CpuAi>();
 
+                if(disEne.trackAtks == true)
+                {
+                   
+
+                    float disChk = disEne.GetDistance();
+                    Debug.Log(disChk);
+                    if (disChk <= disEne.nearDis)
+                    {
+                        disEne.atkTracker.nearAtklanded(playerAttack.attackType.projectile);
+                    }
+                    else
+                        disEne.atkTracker.farAtklanded(playerAttack.attackType.projectile);
+
+                }
+
                 int damage = 25;
 
                 disEne.health -= damage;

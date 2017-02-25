@@ -45,6 +45,7 @@ public class StageGenManager : MonoBehaviour {
             GameObject spawnObj = GameObject.Instantiate(possibleStageDesigns[rand], spawnPos, Quaternion.identity) as GameObject;
 
             StageDesignClass disStage = spawnObj.GetComponent<StageDesignClass>();
+            spawnObj.transform.SetParent(this.transform);
             ScriptedStage.Add(disStage);
 
 

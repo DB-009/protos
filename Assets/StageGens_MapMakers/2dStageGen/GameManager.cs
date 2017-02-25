@@ -41,10 +41,9 @@ public class GameManager : MonoBehaviour
         if (state == BS_States.off)//off
         {
 
-            if (Input.GetKeyDown(KeyCode.F))
-            {
+         
                 state = BS_States.prestart;
-                Debug.Log("Entered Battle");
+                Debug.Log("Entered STage AutoMAtically");
 
                 foreach (SlingShotPlayer disPlayer in possibleTargets)
                 {
@@ -52,7 +51,7 @@ public class GameManager : MonoBehaviour
                     disPlayer.cam.myTarget = disPlayer.transform;
                 }
 
-            }
+            
         }
         else if (state == BS_States.prestart)//prestart
         {

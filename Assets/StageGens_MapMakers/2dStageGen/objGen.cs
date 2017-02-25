@@ -303,6 +303,11 @@ public class objGen : MonoBehaviour
                     spawnNum = SpawnOffline(getp_player);
 
                 }
+                else
+                {
+                    Debug.Log("Random spawns sould be controlled add god script in here yo");
+                    spawnNum = Random.RandomRange(0, spawnObjs.Count);
+                }
 
             }
             float yDis = Random.Range(yJitterMin, yJitterMax);
